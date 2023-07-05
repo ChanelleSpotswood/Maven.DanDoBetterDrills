@@ -61,8 +61,6 @@ public class StringUtilities {
     return false;
     }
 
-    //getMiddleCharacter("Hjapgfhjfjhpy")
-
     /**
      * @param inputValue the value input from user
      * @return the middle character of `inputValue`
@@ -76,7 +74,9 @@ public class StringUtilities {
 //        return inputValue.charAt(inputValue.length() - 1);
 //    }
     public static Character getMiddleCharacter(String inputValue){
-        return inputValue.charAt(inputValue.length() / 2);
+        int mid = (inputValue.length()-1)/2;
+
+        return inputValue.charAt(mid);
     }
 
     /**
